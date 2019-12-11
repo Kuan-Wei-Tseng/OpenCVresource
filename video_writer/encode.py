@@ -6,10 +6,10 @@ import cv2
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('imgdir', help='image file path')
-parser.add_argument('-ti' help = 'image file format',default = '.jpg')
-parser.add_argument('-o', help = 'output video directory + name',default = '.')
-parser.add_argument('-f', help = 'output video frame rate', default = 30)
+parser.add_argument('imgdir',help='image file path')
+parser.add_argument('-ti',help = 'image file format',default = '.jpg')
+parser.add_argument('-o' ,help = 'output video directory + name',default = 'out')
+parser.add_argument('-f' ,help = 'output video frame rate', default = 30)
 parser.add_argument('-to',help = 'output video codec', default = '.mp4')
 
 
@@ -34,10 +34,10 @@ for fname in images:
 	h,w,_ = img.shape
 	size = (w,h)
 
-out = cv2.VideoWriter(outname,fourcc, args.f, size)
+out = cv2.VideoWriter(outname,fourcc[args.to], args.f, size)
 
 for i in range(len(imgarr)):
-    out.write(img_array[i])
+    out.write(imgarr[i])
 
 out.release()
 

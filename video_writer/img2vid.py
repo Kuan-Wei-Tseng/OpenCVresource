@@ -9,7 +9,7 @@ parser.add_argument('imgdir',help='image file path')
 parser.add_argument('-ti',help = 'image file format',default = '.jpg')
 parser.add_argument('-o' ,help = 'output video directory + name',default = 'out')
 parser.add_argument('-f' ,help = 'output video frame rate', default = 30)
-parser.add_argument('-to',help = 'output video codec', default = '.mp4')
+parser.add_argument('-to',help = 'output video format', default = '.mp4')
 parser.add_argument('-v' ,help = 'visualize the process with tqdm.', action ='store_true')
 
 args = parser.parse_args()

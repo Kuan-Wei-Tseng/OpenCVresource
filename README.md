@@ -11,7 +11,7 @@ A python implementation of encoding images to video and decoding video to images
 ```
 .
 ├── face_detection          # face detection 
-├── video_writer            # Video/Image Converter
+├── video_image_converter   # Video/Image Converter
 │   ├── vid2img.py          # Convert video into images.
 │   ├── integration         # Convert images into video.
 │   └── README.md                

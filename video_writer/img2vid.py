@@ -3,7 +3,6 @@ import argparse
 import glob
 import cv2
 
-
 parser = argparse.ArgumentParser()
 
 parser.add_argument('imgdir',help='image file path')

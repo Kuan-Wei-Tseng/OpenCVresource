@@ -1,6 +1,7 @@
 import numpy as np
 import argparse
 import cv2
+import os
 
 parser = argparse.ArgumentParser()
 
@@ -21,7 +22,7 @@ if args.v:
 while(True):
     ret, img = vid.read()
     if ret:
-        cv2.imwrite(args.o + str(cnt) + args.to,img)
+        cv2.imwrite(os.path.join(args.o,str(cnt),args.to,img))
         cnt = cnt + 1
         if args.v:
         	pbar.update(1)

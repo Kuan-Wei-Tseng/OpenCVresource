@@ -1,5 +1,5 @@
 # Ruled Paper Generator
-A python implementation of generating ruled papers/grid papers.
+Generating ruled papers/grid papers with OpenCV and Python.
 
 ## Dependencies:
 1. opencv-python (with numpy) 
